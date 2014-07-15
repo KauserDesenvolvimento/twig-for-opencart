@@ -1,0 +1,83 @@
+<h2>What does it do</h2>
+<p>This module includes the <strong>twig template engine</strong> on <strong>OpenCart</strong>, the engine process after the opencart engine, so you can use both!</p>
+
+<h2>Main features</h2>
+<ul>
+	<li>No configurations needed</li>
+	<li>Easy install, with vqmod support</li>
+	<li>You don't have to change you code</li>
+	<li>All the twig amazing features</li>
+</ul>
+
+<br/>
+
+<h2>Supported OpenCart Versions</h2>
+<em>1.5.5.1</em>, 1.5.6.x
+
+<h2>Check our video walkthrough</h2>  <a target="_blank" href="https://www.youtube.com/watch?v=ELusw4k8ktg">https://www.youtube.com/watch?v=ELusw4k8ktg</a>
+
+<h2>How to install it</h2>
+<ul>
+	<li>Unzip the extensions folder in your desktop ( or any other place you can remmember )</li>
+	<li>Drag the content of the upload folder into your ftp; ( nothing will be overwritted )</li>
+	<li>Like VQMOD, to install go to yourstore.com/twig/install ( replace yourstore.com with your store address)</li>
+</ul>
+
+
+
+What does it do:
+*****************************
+This module show the latest blog post from wordpress ( or other plataform ) via your rss file
+
+Main features:
+*****************************
+  ° Out-of-the-box module, with full customization options
+  ° Fast and secure feed reader ( same engine wordpress uses )
+  ° Modern themes, and default for layout adaptation.
+  ° Customize your theme, many options!
+  ° Full documentation, with video.
+  ° Multiple languages support, choose the feed to load 
+  ° Responsive, and more!
+
+Supported OpenCart Versions:
+****************************
+
+v1.5.5.1, v1.5.6.x
+
+Demo:
+****************************
+
+Store URL
+http://demowpbn0.kauser.com.br/
+
+Admin
+http://demowpbn0.kauser.com.br/admin/
+
+User: wordpress-blog-news
+Pass: wordpress-blog-news
+  
+  
+Notes:
+*****************************
+Subscribe in our newsletter in order to receive updates about our products and new free or paid modules!
+http://eepurl.com/WtrIL
+
+Check our video walkthrough
+https://www.youtube.com/watch?v=ELusw4k8ktg
+
+
+How to install it:
+*****************************
+
+1 - Unzip the extensions folder in your desktop ( or any other place you can remmember );
+2 - Drag the folders < catalog > and < admin > into your ftp; ( nothing will be overwritted );
+3 - Go to Modules in your admin top menu, Extensions > Modules;
+4 - Install the module "Wordpress Blog News Ksr"; 
+5 - Click on the plus in "Add a module +";
+6 - Configure your module;
+
+tags
+blog posts on opencart, wordpress in opencart, opencart blog integration, opencart module news, responsive blog opencart, opencart content marketing, opencart and joomla, drupal for opencart, opencart responsive module
+
+name
+Wordpress, Joomla and Drupal posts on Opencart

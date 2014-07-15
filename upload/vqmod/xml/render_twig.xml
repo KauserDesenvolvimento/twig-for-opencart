@@ -1,0 +1,62 @@
+<modification>
+      <id>Twig for Opencart</id>
+        <version>1.0</version>
+         <vqmver>2.2.1</vqmver>
+         <author>Kauser.com.br and LogixDigital.com.br</author> 
+
+    <!-- CHANGE RENDER ON CONTROLLERS -->
+    <file name="admin/controller/*/*.php,catalog/controller/*/*.php">
+        <operation error="skip" info="Change render to render twig">
+            <search position="replace" >
+                <![CDATA[$this->render()]]>
+            </search>
+            <add>
+                <![CDATA[$this->render_twig()]]>
+            </add>
+        </operation>
+    </file>
+
+    <!-- SYSTEM CHAGE - ADD RENDER TWIG -->
+    <file name="system/engine/controller.php">
+        <operation info="Add twig method">
+            <search position="before" index="1" error="log">
+                <![CDATA[protected function render()]]>
+            </search>
+            <add>
+                <![CDATA[
+          protected function render_twig()
+          {
+              global $twig;
+
+              foreach ($this->children as $child) {
+                  $this->data[basename($child)] = $this->getChild($child);
+              }
+              if (file_exists(DIR_TEMPLATE . $this->template)) {
+
+                  extract($this->data);
+
+                  $template = $twig->loadTemplate($this->template);
+
+                  ob_start();
+                  require(DIR_TEMPLATE . $this->template);
+                  $this->output = ob_get_contents();
+                  ob_end_clean();
+
+                  $twig = new Twig_Environment(new Twig_Loader_String, array(
+                      'autoescape' => false
+                  ));
+
+                  $this->output =  $twig->render($this->output,$this->data);
+
+                  return $this->output;
+              } else {
+                  trigger_error('Error: Could not load template ' . DIR_TEMPLATE . $this->template . '!');
+                  exit();
+              }
+          }
+          ]]>
+            </add>
+        </operation>
+    </file>
+
+</modification>
